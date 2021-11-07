@@ -5,8 +5,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+
 import com.bridgelabz.demo.component.DemoBean;
-import com.bridgelabz.demo.controller.HelloRestController;
+import com.bridgelabz.demo.component.EmployeeBean;
 
 @SpringBootApplication
 public class HelloWorldDemoApplication {
@@ -21,7 +22,7 @@ public class HelloWorldDemoApplication {
 		ApplicationContext context = SpringApplication.run(HelloWorldDemoApplication.class, args);
 		DemoBean demoBean = context.getBean(DemoBean.class);
 		logger.debug("Demo Bean = " + demoBean.toString());
-		System.out.println(context.getBean(HelloRestController.class));
+       
 	}
 
 }
